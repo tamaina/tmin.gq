@@ -11,13 +11,14 @@
     $(window).keydown(function(e){
         console.log("KeyDown!" + e.keyCode);
         $("#display").html(e.keyCode);
+        if(e.KEYCODE_BACK){
+          $("#display").html("Android Back");
+        }
         return false;
     });
   });
     history.pushState(null, null, null);
-
     window.addEventListener("popstate", function() {
-        $("#display").html("戻られた");
         history.pushState(null, null, null);
     });
   </script>
@@ -25,5 +26,6 @@
 <body>
  <h1>KeyEvent Test</h1>
  <p id="display"></p>
+ <p id="set"><a href="javascript:void(0);">追加</a></p>
 </body>
 </html>
