@@ -17,11 +17,11 @@ $(function() {
     $(window).keydown(function(e) {
         $("#disp").html(e.KeyCode);
     });
-    history.pushState(null, null, null);
+});
+history.pushState(null, null, null);
 
-    window.addEventListener("popstate", function() {
-        history.pushState(null, null, null);
-    });
+window.addEventListener("popstate", function() {
+    history.pushState(null, null, null);
 });
 </script>
 </html>
