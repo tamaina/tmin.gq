@@ -11,7 +11,7 @@
     $(window).keydown(function(e){
         console.log("KeyDown!" + e.keyCode);
         $("#display").html(e.keyCode);
-        if(e.KEYCODE_BACK){
+        if(e.keyCode == KeyEvent.KEYCODE_BACK){
           $("#display").html("Android Back");
         }
         return false;
@@ -26,6 +26,5 @@
 <body>
  <h1>KeyEvent Test</h1>
  <p id="display"></p>
- <p id="set"><a href="javascript:void(0);">追加</a></p>
 </body>
 </html>
