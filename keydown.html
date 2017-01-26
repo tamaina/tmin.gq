@@ -17,6 +17,7 @@
     history.pushState(null, null, null);
 
     window.addEventListener("popstate", function() {
+        $("#display").html("戻られた");
         history.pushState(null, null, null);
     });
   </script>
