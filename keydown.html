@@ -12,7 +12,7 @@
         $("#display").html("取得中......");
         console.log("KeyDown!" + e.keyCode);
         $("#display").html(e.keyCode);
-        if(e.keyCode == android.view.KeyEvent.KEYCODE_BACK){
+        if(e.keyCode == KeyEvent.KEYCODE_BACK){
           $("#display").html("Android Back");
         }
         return false;
