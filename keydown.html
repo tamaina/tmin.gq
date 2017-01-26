@@ -10,7 +10,7 @@
   $(document).ready(function(){
     $(window).keydown(function(e){
         console.log("KeyDown!" + e.keyCode);
-        $("#disp").text(e.KeyCode);
+        $("#disp").html(e.KeyCode);
         return false;
     });
   });
