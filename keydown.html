@@ -14,7 +14,8 @@
 <script>
 $(document).ready(function(){
   $(window).keydown(function(e){
-        $("#disp").text(e.KeyCode);
+        console.log("KeyDown!" + e.KeyCode)
+        $("p").text(e.KeyCode);
         return false;
   });
 });
